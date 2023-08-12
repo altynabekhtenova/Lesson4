@@ -17,6 +17,8 @@ public class exercise1 {
         int lastNumber = scanner.nextInt();
         int numberSum = 0;
         int numberCount = 0;
+        int evenNumbersSum = 0;
+        int evenNumbersNum = 0;
 
         for (int i = firstNumber; i <= lastNumber; i++) {
             numberSum += i;
@@ -24,5 +26,13 @@ public class exercise1 {
 
         }
         System.out.println("Среднее арифметическое целых чисел введенного интервала = " + (double) numberSum / numberCount);
+
+        for (int i = firstNumber; i <= lastNumber; i++) {
+            if (i % 2 == 0) {
+                evenNumbersSum += i;
+                evenNumbersNum += 1;
+            }
+        }
+        System.out.println("Среднее арифметическое четных чисел введенного интервала = " + (double) evenNumbersSum / evenNumbersNum);
     }
 }
