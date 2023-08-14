@@ -1,8 +1,6 @@
-package ru.academits.java.lesson4;
-
 import java.util.Scanner;
 
-public class exercise1 {
+public class Exercise1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите первое число интервала: ");
@@ -23,16 +21,15 @@ public class exercise1 {
         for (int i = firstNumber; i <= lastNumber; i++) {
             numberSum += i;
             numberCount += 1;
-
-        }
-        System.out.println("Среднее арифметическое целых чисел введенного интервала = " + (double) numberSum / numberCount);
-
-        for (int i = firstNumber; i <= lastNumber; i++) {
             if (i % 2 == 0) {
                 evenNumbersSum += i;
                 evenNumbersNum += 1;
+
             }
+            System.out.println("Среднее арифметическое целых чисел введенного интервала = " + (double) numberSum / numberCount);
+            System.out.println("Среднее арифметическое четных чисел введенного интервала = " + (double) evenNumbersSum / evenNumbersNum);
+
         }
-        System.out.println("Среднее арифметическое четных чисел введенного интервала = " + (double) evenNumbersSum / evenNumbersNum);
+
     }
 }
