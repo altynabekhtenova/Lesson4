@@ -10,7 +10,7 @@ public class Exercise2 {
         if (i % 4 == 0) {
             System.out.print(i + " ");
         }
-        return 1;
+        return i;
     }
 }
 
