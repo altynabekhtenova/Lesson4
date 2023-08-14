@@ -24,7 +24,6 @@ public class Exercise1 {
             if (i % 2 == 0) {
                 evenNumbersSum += i;
                 evenNumbersNum += 1;
-
             }
         }
         System.out.println("Среднее арифметическое целых чисел введенного интервала = " + (double) numberSum / numberCount);
