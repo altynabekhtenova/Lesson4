@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Person {
     private String name;
     private String middleName;
@@ -63,9 +65,10 @@ public class Person {
     }
 
     public void printBirthYear() {
-        int birthYear = (2023 - age);
+        LocalDate currentDate = LocalDate.now();
+        int year = currentDate.getYear();
+        int birthYear = (year - age);
         System.out.println("Год рождения = " + birthYear);
     }
-
 
 }
